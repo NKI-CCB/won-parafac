@@ -3,10 +3,13 @@
 ### Weighted orthogonal non-negative (WON) parallel factor analsyis (PARAFAC)
 
 WON-PARAFAC is a variant of parallel factor analysis (PARAFAC), a tensor factorization method.
-WON-PARAFAC impose the following three constraints on the model:
+WON-PARAFAC impose the following three constraints on the standard PARAFAC:
 1. Weighting scheme
+- For balanced integration of the multiple data types
 2. Orthogonality constraint
+- To reduce overlapping between a factor (originally used on gene mode). This also introduces extra sparcity on the mode.
 3. Non-negativity
+- To induce sparse and parts-based representation.
 
 ### Implementation / Dependency
 
@@ -14,7 +17,7 @@ A multiplicative update rule was used to derive the algorithm, as in the origina
 The code requires [tensor toolbox version 2.6 (by Tamara Kolda)](https://www.sandia.gov/~tgkolda/TensorToolbox/index-2.6.html
 ), freely available for non-commercial use upon registration.
 
-For running the code, tenstor toobox must be avilable on the path environment, using `addpath` command.
+For running the code, tenstor toobox must be avilable on the path environment, using `addpath` command in MATLAB.
 
 ### Demo code and data
 
