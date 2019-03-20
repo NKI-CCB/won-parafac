@@ -55,7 +55,7 @@ for o=1:length(Ortho)
         [Fs, fit_info] = wonparafac(tensor(X_use), Nbasis(n), options);
         Factors{n,o} = Fs;
         fits{n,o} = fit_info;
-        final_fit(n,o) = fits{n}.fits(end);
+        final_fit(n,o) = fits{n,o}.fits(end);
     end
 end
 
