@@ -19,6 +19,10 @@ The code requires [tensor toolbox version 2.6 (by Tamara Kolda)](https://www.san
 
 For running the code, tenstor toobox must be avilable on the path environment, using `addpath` command in MATLAB.
 
+### Main function (`wonparafac.m`) and options
+
+to be written
+
 ### Demo code and data
 
 You can load demo data, which contains pan-cancer multiomics data produced in [GDSC1000 project (Sanger)](https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html).
@@ -35,5 +39,13 @@ Note that the 5 data types corresponds to below:
 - copy number gain (binary; CN(+))
 - copy number loss (binary; CN(-))
 
-The list of genes names in `X` is indicated in `gene_names`, which will also be loaded together with `X`.
+The list of genes names in `X` is indicated in `genenames`, which will also be loaded together with `X`.
 
+`Demo.m` will perform WON-PARAFAC analysis using random 100 genes by default, and varying number of factors and strength of orthogonal constraint on gene factor matrix.
+
+- Number of basis: 10, 20, 30, ..., 200
+- Strength of orthogonal constraint: 0 (no constraint), 0.2, 0.5, 1
+
+Finally, a plot will be generated to show the performance of WON-PARAFAC for reconstructing input tensor (see below for an example).
+
+![alt text](https://github.com/anoyaro84/wonparafac/blob/master/Demo_plot.png "Demo plot")
