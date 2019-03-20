@@ -35,7 +35,7 @@ options.orthogonal = [.2, 0, 0]; % orthogonal constraint only on gene mode (stre
 % weight setting
 var = 1./sum(sum(X_use.^2,1),2);
 var = var./sum(var(:));
-options.weight_W = ones(size(X_use)).*repmat(var, [size(X_use,1), size(X_use,2), size(X_use,3)]);
+options.weight_W = ones(size(X_use)).*repmat(var, [size(X_use,1), size(X_use,2)]);
 
 
 
@@ -62,7 +62,7 @@ end
 %% Plot the outcome
 
 fig = plot(Nbasis, final_fit);
-title('Performanc of WON-PARAFAC with varying number of factors/constrinat')
+title('Performanc of WON-PARAFAC with varying number of factors/constraint')
 xlabel('Number of factors')
 ylabel('Explained variation (reconstruction performance)')
 
