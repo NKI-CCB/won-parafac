@@ -19,10 +19,6 @@ The code requires [tensor toolbox version 2.6 (by Tamara Kolda)](https://www.san
 
 For running the code, tenstor toobox must be avilable on the path environment, using `addpath` command in MATLAB.
 
-### Main function (`wonparafac.m`) and options
-
-to be written
-
 ### Demo code and data
 
 You can load demo data, which contains pan-cancer multiomics data produced in [GDSC1000 project (Sanger)](https://www.cancerrxgene.org/gdsc1000/GDSC1000_WebResources/Home.html).
