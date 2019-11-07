@@ -44,4 +44,4 @@ The list of genes names in `X` is indicated in `genenames`, which will also be l
 
 Finally, a plot will be generated to show the performance of WON-PARAFAC for reconstructing input tensor (see below for an example).
 
-![alt text](https://github.com/anoyaro84/wonparafac/blob/master/Demo_plot.png "Demo plot")
+![alt text](https://github.com/anoyaro84/NKI-CCB/won-parafac/master/Demo_plot.png "Demo plot")
