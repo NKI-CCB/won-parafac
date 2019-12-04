@@ -81,8 +81,6 @@ if ~islogical(fix_mode) || length(fix_mode) ~= N
 end
 
 
-normX = norm(WeightW.*X);
-
 
 %% Initialization of factors
 if iscell(init)
