@@ -26,7 +26,6 @@ X_use = X(gene_select,:,:);
 options = struct();
 options.tol = 1.0e-7;
 options.init = 'nvecs';
-options.rate = 1;
 optoins.printitn = 1000;
 
 % orthogonal constraint
